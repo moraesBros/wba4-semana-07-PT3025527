@@ -53,14 +53,49 @@
 </nav-->
 
 
-        <aside>
-            <!-- indica que é um conteúdo a parte do princial, auxiliar-->
-            <h1>Acontece no IFSP!</h1>
+        <style>
+    .grade-noticias {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* duas colunas com largura igual */
+        gap: 20px; /* espaçamento entre os campos */
+    }
+
+    .campo {
+        background-color: #f5f5f5;
+        padding: 15px;
+        border-radius: 8px;
+        /* borda sutil, mas sem parecer tabela */
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+</style>
+
+<aside>
+    <h1>Acontece no IFSP!</h1>
+    
+    <div class="grade-noticias">
+        <div class="campo">
             <figure>
-                <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="50%" height="50%">
+                <img src="Imagens/SEJA_RARO.jpg" alt="Palestra Seja Raro" width="100%" height="auto">
                 <figcaption>Aniversário do IFSP - Pirituba - Palestra Augusto Aielo</figcaption>
             </figure>
-        </aside>
+        </div>
+        
+        <div class="campo">
+            <h3>Workshop de Robótica</h3>
+            <p>Inscreva-se para o workshop que acontecerá no próximo mês.</p>
+        </div>
+        
+        <div class="campo">
+            <h3>Processo Seletivo</h3>
+            <p>Inscrições abertas para novos cursos técnicos.</p>
+        </div>
+        
+        <div class="campo">
+            <h3>Feira de Profissões</h3>
+            <p>Venha conhecer as oportunidades de carreira.</p>
+        </div>
+    </div>
+</aside>
 
         <section>
             <h1>
